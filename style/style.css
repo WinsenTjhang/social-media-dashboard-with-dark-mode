@@ -131,9 +131,15 @@ h1 {
   justify-content: space-between;
 }
 
+/* .container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+} */
+
 .social-media {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 320px));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 320px));
   justify-content: center;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
@@ -307,7 +313,7 @@ h2 {
 
   .social-media {
     margin-top: -115px;
-    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   }
 
   .followers {
@@ -321,6 +327,12 @@ h2 {
 
   h2 {
     font-size: 1.7rem;
+  }
+}
+
+@media (min-width:1300px){
+  .overview {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 
